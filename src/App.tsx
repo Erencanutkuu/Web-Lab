@@ -5,9 +5,9 @@ function App() {
       <h2>LAB-1</h2>
       <p>Ad Soyad: Eren Can Utku</p>
       <p>Ogrenci No: 230542030</p>
-      <p>Bolum: Bilgisayar Programciligi</p>
+      <p>Bolum: Yazilim Muhendisligi</p>
       <p>Tanitim: Teknolojiye merakli, uretmeyi seven bir ogrenciyim.</p>
-      <p>Hobiler: Yuzme, fotografcilik, satranc</p>
+      <p>Hobiler: Yuzme, futbol, masa tenisi</p>
     </div>
   );
 }
