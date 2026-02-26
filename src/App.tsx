@@ -7,7 +7,7 @@ function App() {
       <p>Ogrenci No: 230542030</p>
       <p>Bolum: Bilgisayar Programciligi</p>
       <p>Tanitim: Teknolojiye merakli, uretmeyi seven bir ogrenciyim.</p>
-      <p>Hobiler: Yuzme, fotoğrafcilik, satranc</p>
+      <p>Hobiler: Yuzme, fotografcilik, satranc</p>
     </div>
   );
 }
