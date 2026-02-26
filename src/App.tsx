@@ -5,6 +5,9 @@ function App() {
       <h2>LAB-1</h2>
       <p>Ad Soyad: Eren Can Utku</p>
       <p>Ogrenci No: 230542030</p>
+      <p>Bolum: Bilgisayar Programciligi</p>
+      <p>Tanitim: Teknolojiye merakli, uretmeyi seven bir ogrenciyim.</p>
+      <p>Hobiler: Yuzme, fotoğrafcilik, satranc</p>
     </div>
   );
 }
