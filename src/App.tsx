@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div>
+    <div className="card">
       <h1>Web Tasarimi ve Programlama</h1>
       <h2>LAB-1</h2>
       <p>Ad Soyad: Eren Can Utku</p>
