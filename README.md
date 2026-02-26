@@ -24,4 +24,4 @@ npm run dev
 Tarayicida http://localhost:5173 adresini ac.
 
 ## Ekran Goruntusu
-_Localhost calismadigi icin simdilik ekran goruntusu eklenemedi. Proje derlenip calistirildiginda buraya guncel ekran goruntusu eklenebilir._
+![Uygulama ekran goruntusu](docs/screenshot.png)
