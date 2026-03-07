@@ -259,7 +259,7 @@ footer {
 }
 
 /* =========================================
-   TABLET (640px ve uzeri)
+   TABLET (640px ve uzeri) - 3 breakpoint
    ========================================= */
 @media (min-width: 640px) {
   section {
@@ -284,7 +284,7 @@ footer {
 }
 
 /* =========================================
-   MASAUSTU (1024px ve uzeri)
+   MASAUSTU (1024px ve uzeri) - 3 breakpoint
    ========================================= */
 @media (min-width: 1024px) {
   /* Icerik genisligi sinirla */
