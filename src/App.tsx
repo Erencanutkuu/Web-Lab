@@ -6,7 +6,7 @@ function App() {
       </a>
 
       <header>
-        <h1>Web Tasarimi ve Programlama</h1>
+        <h1 className="site-title">Web Tasarimi ve Programlama</h1>
         <nav aria-label="Ana navigasyon">
           <ul>
             <li>
@@ -25,50 +25,81 @@ function App() {
       <main id="main-content">
         <section id="hakkimda">
           <h2>Hakkimda</h2>
-          <figure>
-            <img
-              className="profil-foto"
-              src="/foto.jpg"
-              alt="Eren Can Utku'nun vesikalik fotografi"
-            />
-            <figcaption>Eren Can Utku</figcaption>
-          </figure>
-          <p>
-            Ben Eren Can Utku. Yazilim Muhendisligi 3. sinif ogrencisiyim. Firat
-            Universitesinde okuyorum (Elazig). Su an Istanbul'da yasiyorum.
-          </p>
-          <h3>Kullandigim Teknolojiler</h3>
-          <ul>
-            <li>Java</li>
-            <li>Java Spring Boot</li>
-            <li>C++</li>
-            <li>PostgreSQL</li>
-          </ul>
+          <div className="about-content">
+            <figure>
+              <img
+                src="/foto.jpg"
+                alt="Eren Can Utku'nun vesikalik fotografi"
+              />
+              <figcaption>Eren Can Utku</figcaption>
+            </figure>
+            <div>
+              <p>
+                Ben Eren Can Utku. Yazilim Muhendisligi 3. sinif ogrencisiyim.
+                Firat Universitesinde okuyorum (Elazig). Su an Istanbul'da
+                yasiyorum.
+              </p>
+              <h3>Kullandigim Teknolojiler</h3>
+              <ul
+                className="skill-tags"
+                role="list"
+                aria-label="Beceri etiketleri"
+              >
+                <li>Java</li>
+                <li>Java Spring Boot</li>
+                <li>C++</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section id="projeler">
           <h2>Projelerim</h2>
-          <article>
-            <h3>Proje 1</h3>
-            <p>Kisisel portfoy sitesi.</p>
-            <p>Kullanilan teknolojiler: HTML, CSS.</p>
-            <figure>
-              <img src="/proje-1.png" alt="Proje 1 ana sayfa ekran goruntusu" />
-              <figcaption>Proje 1</figcaption>
-            </figure>
-          </article>
-          <article>
-            <h3>Proje 2</h3>
-            <p>Basit not takip uygulamasi.</p>
-            <p>Kullanilan teknolojiler: JavaScript.</p>
-            <figure>
+          <div className="project-grid">
+            <article className="project-card">
+              <img
+                src="/proje-1.png"
+                alt="E-Ticaret sitesi anasayfa ekran goruntusu"
+              />
+              <h3>E-Ticaret Sitesi</h3>
+              <p>
+                React ve Node.js ile gelistirilmis tam kapsamli bir e-ticaret
+                uygulamasi.
+              </p>
+              <ul className="skill-tags">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+            </article>
+
+            <article className="project-card">
               <img
                 src="/proje-2.png"
-                alt="Proje 2 giris sayfasi ekran goruntusu"
+                alt="Blog uygulamasi yazi listesi gorunumu"
               />
-              <figcaption>Proje 2</figcaption>
-            </figure>
-          </article>
+              <h3>Blog Uygulamasi</h3>
+              <p>Kisisel blog platformu. Markdown destekli yazi editoru.</p>
+              <ul className="skill-tags">
+                <li>TypeScript</li>
+                <li>Next.js</li>
+              </ul>
+            </article>
+
+            <article className="project-card">
+              <img
+                src="/proje-2.png"
+                alt="Hava durumu uygulamasi arayuzu"
+              />
+              <h3>Hava Durumu</h3>
+              <p>OpenWeather API ile anlik hava durumu bilgisi.</p>
+              <ul className="skill-tags">
+                <li>JavaScript</li>
+                <li>API</li>
+              </ul>
+            </article>
+          </div>
         </section>
 
         <section id="iletisim">
