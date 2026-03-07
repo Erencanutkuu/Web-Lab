@@ -73,7 +73,71 @@ function App() {
 
         <section id="iletisim">
           <h2>Iletisim</h2>
-          {/* form buraya */}
+          <form>
+            <div className="form-group">
+              <label htmlFor="ad-soyad">Ad Soyad</label>
+              <input
+                id="ad-soyad"
+                name="ad-soyad"
+                type="text"
+                required
+                minLength={3}
+                aria-describedby="ad-soyad-hata"
+              />
+              <small id="ad-soyad-hata" className="error-msg" role="alert">
+                Lütfen en az 3 karakter girin.
+              </small>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="email">E-posta</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                aria-describedby="email-hata"
+              />
+              <small id="email-hata" className="error-msg" role="alert">
+                Gecerli bir e-posta girin.
+              </small>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="konu">Konu</label>
+              <select
+                id="konu"
+                name="konu"
+                required
+                aria-describedby="konu-hata"
+              >
+                <option value="">Seciniz</option>
+                <option value="staj">Staj</option>
+                <option value="proje">Proje</option>
+                <option value="diger">Diger</option>
+              </select>
+              <small id="konu-hata" className="error-msg" role="alert">
+                Lutfen bir konu secin.
+              </small>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="mesaj">Mesaj</label>
+              <textarea
+                id="mesaj"
+                name="mesaj"
+                rows={4}
+                required
+                minLength={10}
+                aria-describedby="mesaj-hata"
+              />
+              <small id="mesaj-hata" className="error-msg" role="alert">
+                Lutfen en az 10 karakter yazin.
+              </small>
+            </div>
+
+            <button type="submit">Gonder</button>
+          </form>
         </section>
       </main>
 
