@@ -80,6 +80,7 @@ function App() {
                 id="ad-soyad"
                 name="ad-soyad"
                 type="text"
+                autoComplete="name"
                 required
                 minLength={3}
                 aria-describedby="ad-soyad-hata"
@@ -95,6 +96,7 @@ function App() {
                 id="email"
                 name="email"
                 type="email"
+                autoComplete="email"
                 required
                 aria-describedby="email-hata"
               />
