@@ -6,6 +6,13 @@ import Alert from "../components/Alert";
 export default function UIKit() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950 p-8 space-y-12">
+      <a
+        href="#"
+        className="inline-flex items-center text-sm font-medium text-blue-700 dark:text-blue-300 hover:underline"
+      >
+        ← Portfoye don
+      </a>
+
       <button
         onClick={() => document.documentElement.classList.toggle("dark")}
         className="fixed top-4 right-4 z-50 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-full shadow-lg hover:scale-110 transition-transform"
@@ -20,7 +27,7 @@ export default function UIKit() {
       </h1>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold border-b pb-2">Buttons</h2>
+        <h2 className="text-2xl font-semibold border-b pb-2">Button</h2>
         <div className="flex flex-wrap gap-3">
           <Button variant="primary">Primary</Button>
           <Button variant="secondary">Secondary</Button>
@@ -28,9 +35,18 @@ export default function UIKit() {
           <Button variant="ghost">Ghost</Button>
         </div>
         <div className="flex flex-wrap items-end gap-3">
-          <Button size="sm">Small</Button>
-          <Button size="md">Medium</Button>
-          <Button size="lg">Large</Button>
+          <Button size="sm">Kucuk</Button>
+          <Button size="md">Orta</Button>
+          <Button size="lg">Buyuk</Button>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <Button
+            variant="primary"
+            disabled
+            className="opacity-50 cursor-not-allowed pointer-events-none"
+          >
+            Disabled
+          </Button>
         </div>
       </section>
 
@@ -82,7 +98,12 @@ export default function UIKit() {
         <Alert variant="warning" title="Uyari">
           Dikkat edilmesi gereken durum.
         </Alert>
-        <Alert variant="error" title="Hata" dismissible onDismiss={() => {}}>
+        <Alert
+          variant="error"
+          title="Hata"
+          dismissible
+          onDismiss={() => console.log("kapatildi")}
+        >
           Bir hata olustu.
         </Alert>
       </section>
